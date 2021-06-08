@@ -1,0 +1,1 @@
+Some exercices in codewars and tests with Jest
