@@ -12,19 +12,9 @@
 
 function generateHashtag(str) {
 const hash ="#";
-let lengthTotal = str.length;
 let upperString = str.toLowerCase().split(" ")
-let result =  hash + upperString.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('');
-if (lengthTotal <= 0) {
-    return false
-} 
-if (result.length > 140) {
-    return false
-}
-if (result === "#"){
-  return false
-} 
-return result
+let result = hash + upperString.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('');
+return result.length > 140 || result === "#" || result.length <= 0  ? false : result
   
 }
 module.exports = generateHashtag
