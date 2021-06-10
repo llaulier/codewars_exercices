@@ -2,7 +2,7 @@
 // That given a pattern and a string str, find if str follows the same sequence as pattern.
 // Note: Each letter in the pattern stands for a distinct word => no empty string !
 
-//ISOPMORPHISME
+//ISOPMORPHISM
 function getWordPatternIsomorphic(pattern, str) {
   let comb = pattern.split('');
   let word = str.split(' ');
