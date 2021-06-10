@@ -8,24 +8,8 @@
 const abacus = {
   M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1
 };
-// function getRomanNumerals (roman){
-//     let arrSplit = roman.split('')
-//     let sumRoman = [];
-//   for (let i = 0; i< roman.length ; i++){
-//     sumRoman.push(index[arrSplit[i]]);
-//   }
-//     for(let j = 0; j < sumRoman.length ; j++){
-//       if(sumRoman[j] < sumRoman[j+1]){
-//       return sumRoman.reduce((a, b)=> b - a);
-//     }
-//       if(sumRoman[j] >= sumRoman[j+1]){
-//         return sumRoman.reduce((a, b)=> a + b);
-//       }}
-//     return sumRoman.length != 0 ? 0 : sumRoman;
-//   };
-
 function getRomanNumerals(roman) {
-  return roman.match(/CM|CD|XC|XL|IX|IV|\w/g).reduce((symbol1, symbol2) => symbol1 + abacus[symbol2], 0);
+  return roman.length > 0 ? roman.match(/CM|CD|XC|XL|IX|IV|\w/g).reduce((symbol1, symbol2) => symbol1 + abacus[symbol2], 0) : 0;
 }
 
 module.exports = getRomanNumerals;

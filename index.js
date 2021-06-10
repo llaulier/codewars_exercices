@@ -1,8 +1,12 @@
 const generateHashtag = require('./exercices/hashtag.js');
 const getRomanNumerals = require('./exercices/romanNumerals.js');
+const getWordPatternIsomorphic = require('./exercices/wordPattern.js');
 
-const result1 = generateHashtag(' To big is enough');
-console.log(`result: ${result1}`);
+const result1 = generateHashtag(' To big');
+console.log(`result 1: ${result1}`);
 
 const result2 = getRomanNumerals('XXIV');
-console.log(`result: ${result2}`);
+console.log(`result 2: ${result2}`);
+
+const result3 = getWordPatternIsomorphic('aba', "toque toque toque");
+console.log(`result 3: ${result3}`);

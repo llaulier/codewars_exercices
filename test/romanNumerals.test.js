@@ -10,7 +10,13 @@ describe("Test roman numerals", () => {
     it("Expect additionnal a great number", () => {
         expect(getRomanNumerals("MMMMDCCCLXXXVIII")).toBe(4888)
     })
-    it("Expect additionnal yeat", () => {
+    it("Expect a year", () => {
         expect(getRomanNumerals("MMXXI")).toBe(2021)
     })
+    // it("Expect return 0", () => {
+    //     expect(getRomanNumerals("")).toBe(0)
+    // })
+    // it("Expect return 0", () => {
+    //     expect(getRomanNumerals(" ")).toBe(0)
+    // })
 });
