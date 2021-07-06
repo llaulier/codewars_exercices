@@ -1,7 +1,3 @@
-
-// abab', 'truck car truck car'
-
-
 const getWordPatternIsomorphic = require('../exercices/wordPattern');
 
 describe("Test isomorphism of 2 strings", () => { 
