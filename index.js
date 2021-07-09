@@ -14,8 +14,8 @@ console.log(`result of roman numerals: ${result2}`);
 const result3 = getWordPatternIsomorphic('acca', "toque toque toque toque");
 console.log(`result of Isomorphism: ${result3}`);
 
-const result4 = getCakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200});
-console.log(`result of get Cakes: ${result4}`);
+const cakeResult = getCakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000});
+console.log(`result of get Cakes: ${cakeResult}`);
 
 const mumblingResult = getMumbling("cwAt")
 console.log(`result of Mumbling: ${mumblingResult}`);
