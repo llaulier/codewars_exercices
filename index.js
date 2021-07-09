@@ -3,6 +3,7 @@ const getRomanNumerals = require('./exercices/romanNumerals.js');
 const getWordPatternIsomorphic = require('./exercices/wordPattern.js');
 const getCakes = require('./exercices/bakerRecipes.js');
 const getMumbling = require('./exercices/mumbling');
+const getAddUpToK = require('./exercices/codeProblem1');
 
 const result1 = generateHashtag(' To big');
 console.log(`result of hastag: ${result1}`);
@@ -18,3 +19,6 @@ console.log(`result of get Cakes: ${result4}`);
 
 const mumblingResult = getMumbling("cwAt")
 console.log(`result of Mumbling: ${mumblingResult}`);
+
+const kResult = getAddUpToK([10, 15, 3, 7, 25], 13)
+console.log(`result of k: ${kResult}`);
