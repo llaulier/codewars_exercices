@@ -14,8 +14,7 @@ function getProductofArray(inputArray){
         if(j === i){
             P[j] = product/inputArray[j]
         } else {
-            product = product * inputArray[i]
-            
+            product = product * inputArray[i]     
         }
         P[j] = product
         

@@ -23,5 +23,5 @@ const getProductofArray = require('./exercices/codeProblem2');
 
 // const kResult = getAddUpToK([10, 15, 3, 7, 25], 13)
 // console.log(`result of k: ${kResult}`);
-const productResult = getProductofArray([4,3,2,1])
+const productResult = getProductofArray([1,2,3,4,5])
 console.log(`result of product array: ${productResult}`);
