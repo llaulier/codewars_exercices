@@ -20,8 +20,9 @@ function getProductofArray(inputArray){
         P[j] = product
         
     }
-    console.log(P[j]) 
+    
 }
+    return P
 }
 
 module.exports = getProductofArray
