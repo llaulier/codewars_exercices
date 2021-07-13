@@ -6,8 +6,9 @@
 // const inputArray = [1,2,3,4,5];
 
 function getProductofArray(inputArray){
-    let P = []
-    let l = inputArray.length
+    let P = [];
+    let newP = []
+    let l = inputArray.length;
     for (let j = 0 ; j < l; j++ ){ 
         let product = 1;
         for (let i = 0 ; i < l; i++ ){
@@ -17,11 +18,10 @@ function getProductofArray(inputArray){
             product = product * inputArray[i]     
         }
         P[j] = product
-        
     }
     
 }
-    return P
+ return P
 }
 
 module.exports = getProductofArray
