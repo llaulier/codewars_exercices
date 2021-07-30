@@ -11,22 +11,17 @@
 // cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000}); 
 
 function getCakes(recipe, available) {
-  let recipeArray =[];
- Object.entries(recipe).forEach(([key,value]) => recipeArray.push(key,value));
- let availableArray = [];
- Object.entries(available).forEach(([key,value]) => availableArray.push(key,value));
- for(let i = 0; i< availableArray.length ; i++ )
- {
-   if (recipeArray[i] === availableArray[i]){
-     let j = i+1
-     let division = availableArray[j] / recipeArray[j]
-     return Math.floor(division)
-   }
-   else if(availableArray.length !== recipeArray.length){
+  let division = []
+  let i = -1;
+  for (let key in recipe) {
+  if (available.hasOwnProperty(key) === true) {
+    i++
+    division[i] = Math.floor(available[key]/recipe[key])
+  } else {
     return 0
   }
-   
- } 
+} 
+return Math.min(...division)
 }
 
 module.exports = getCakes;

@@ -15,7 +15,7 @@ console.log(`result of roman numerals: ${result2}`);
 const result3 = getWordPatternIsomorphic('acca', "toque toque toque toque");
 console.log(`result of Isomorphism: ${result3}`);
 
-const cakeResult = getCakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000});
+const cakeResult = getCakes({"cream":200,"flour":300,"sugar":150,"milk":100,"oil":100},{"sugar":1700,"flour":20000,"milk":20000,"oil":30000,"cream":5000});
 console.log(`result of get Cakes: ${cakeResult}`);
 
 const mumblingResult = getMumbling("cwAt")
@@ -24,5 +24,5 @@ console.log(`result of Mumbling: ${mumblingResult}`);
 const kResult = getAddUpToK([10, 15, 3, 7, 25], 13)
 console.log(`result of k: ${kResult}`);
 
-const productResult = getProductofArray([10, 20, 30, 40, 50, 60])
+const productResult = getProductofArray([1, 2, 3, 4, 5])
 console.log(`result of product array: ${productResult}`);

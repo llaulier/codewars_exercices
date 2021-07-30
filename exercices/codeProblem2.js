@@ -7,7 +7,6 @@
 
 function getProductofArray(inputArray){
     let P = [];
-    let newP = []
     let l = inputArray.length;
     for (let j = 0 ; j < l; j++ ){ 
         let product = 1;
