@@ -1,4 +1,4 @@
-const getProductofArray = require('../exercices/codeProblem2');
+const getProductofArray = require('../exercices/codingProblem2');
 
 describe("Test Product", () => {
     it( "Expect the total product of the array each except index i", () =>{  

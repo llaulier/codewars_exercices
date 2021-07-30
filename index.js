@@ -3,8 +3,8 @@ const getRomanNumerals = require('./exercices/romanNumerals.js');
 const getWordPatternIsomorphic = require('./exercices/wordPattern.js');
 const getCakes = require('./exercices/bakerRecipes.js');
 const getMumbling = require('./exercices/mumbling');
-const getAddUpToK = require('./exercices/codeProblem1');
-const getProductofArray = require('./exercices/codeProblem2');
+const getAddUpToK = require('./exercices/codingProblem1');
+const getProductofArray = require('./exercices/codingProblem2');
 
 const result1 = generateHashtag(' To big');
 console.log(`result of hastag: ${result1}`);
